@@ -17,7 +17,7 @@ app.use(cookieParser());
 
 // CORS configuration
 app.use(cors({
-  origin: process.env.FRONTEND_URL,
+  origin:'https://calendar-app-google.netlify.app',
   credentials: true,
   methods: ['GET', 'POST', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'Accept']
